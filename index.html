@@ -299,6 +299,8 @@
     }
 
     var deadline = new Date(Date.parse(new Date()) + 199 * 24 * 60 * 60 * 1000);
+    var deadline = new Date(Date.parse('13 May 2023 00:00:00 GMT'));
+    console.log(deadline);
     var c = new Clock(deadline, function(){ alert('countdown complete') });
     document.body.appendChild(c.el);
 
